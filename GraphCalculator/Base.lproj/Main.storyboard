@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X73-Yw-Clq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOQ-UN-Cgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3972" y="-922"/>
+            <point key="canvasLocation" x="-3199" y="-676"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mEy-sm-T15">
@@ -58,7 +58,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kwc-ho-Mly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3154" y="-922"/>
+            <point key="canvasLocation" x="-2121" y="-717"/>
         </scene>
         <!--Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -464,7 +464,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959" y="-922"/>
+            <point key="canvasLocation" x="-2102" y="-1511"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="hdk-cz-KKo">
+            <objects>
+                <splitViewController id="X73-Yw-Clq" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="bUn-xY-SjU" kind="relationship" relationship="masterViewController" id="E8e-wH-m6g"/>
+                        <segue destination="VAI-OG-opj" kind="relationship" relationship="detailViewController" id="Xhb-Z2-TUX"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5g7-YK-rhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4273" y="-1415"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jbe-Fl-84g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bUn-xY-SjU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NR0-ab-UdO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aVJ-wS-qHx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o2i-75-O6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3334" y="-1512"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xhb-Z2-TUX"/>
+    </inferredMetricsTieBreakers>
 </document>
